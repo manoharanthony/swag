@@ -28,22 +28,47 @@
               <img src="../assets/img/1.jpeg" alt class="swag-shirt-img" />
             </div>
 
-            <div class="slider">
-              <div class="row">
-                <div class="col-md-3">
-                  <img src="../assets/img/1.jpeg" alt class="swag-shirt-var1-img" />
-                </div>
-                <div class="col-md-3">
-                  <img src="../assets/img/1.jpeg" alt class="swag-shirt-var1-img" />
-                </div>
-                <div class="col-md-3">
-                  <img src="../assets/img/1.jpeg" alt class="swag-shirt-var1-img" />
-                </div>
-                <div class="col-md-3">
-                  <img src="../assets/img/1.jpeg" alt class="swag-shirt-var1-img" />
+            <div class="bg-light p15">
+              <div class="slider">
+                <div class="row">
+                  <div class="col-md-3">
+                    <img src="../assets/img/1.jpeg" alt class="swag-shirt-var1-img" />
+                  </div>
+                  <div class="col-md-3">
+                    <img src="../assets/img/1.jpeg" alt class="swag-shirt-var1-img" />
+                  </div>
+                  <div class="col-md-3">
+                    <img src="../assets/img/1.jpeg" alt class="swag-shirt-var1-img" />
+                  </div>
+                  <div class="col-md-3">
+                    <img src="../assets/img/1.jpeg" alt class="swag-shirt-var1-img" />
+                  </div>
                 </div>
               </div>
             </div>
+
+            <!-- <hooper :itemsToShow="3">
+              <slide>slide 1</slide>
+              <slide>slide 2</slide>
+              <slide>slide 3</slide>
+              <slide>slide 4</slide>
+              <slide>slide 5</slide>
+              <slide>slide 6</slide> 
+            </hooper>
+            
+              <swiper-slide :options="swiperOptionh" class="slider">
+                <swiper :options="swiperOptionv">
+                  <swiper-slide>
+                    <img src="../assets/img/1.jpeg" class="swag-shirt-var1-img" />
+                  </swiper-slide>
+                  <swiper-slide>
+                    <img src="../assets/img/1.jpeg" class="swag-shirt-var1-img" />
+                  </swiper-slide>
+
+                  <div class="swiper-pagination swiper-pagination-v" slot="pagination"></div>
+                </swiper>
+              <div class="swiper-pagination swiper-pagination-h" slot="pagination"></div>
+            </swiper-slide>-->
 
             <!-- Slider container -->
             <!-- <div class="swiper-container">
@@ -87,13 +112,13 @@
                             <a href="#" class="size-list border bg-light">s</a>
                           </li>
                           <li class="list-inline-item">
-                            <a href="#" class="size-list border m-1 bg-light">m</a>
+                            <a href="#" class="size-list border my-1 bg-light">m</a>
                           </li>
                           <li class="list-inline-item">
-                            <a href="#" class="size-list border m-1 bg-light">l</a>
+                            <a href="#" class="size-list border bg-light">l</a>
                           </li>
                           <li class="list-inline-item">
-                            <a href="#" class="size-list border m-1 bg-light">xl</a>
+                            <a href="#" class="size-list border my-1 bg-light">xl</a>
                           </li>
                           <li class="list-inline-item">
                             <a href="#" class="size-list border bg-light">xxl</a>
@@ -116,28 +141,44 @@
                             <li class="list-inline-item">
                               <a href="#">
                                 <div class="shirt-color-img">
-                                  <img src="../assets/img/1.jpeg" alt class="swag-shirt-color-img" />
+                                  <img
+                                    src="../assets/img/1.jpeg"
+                                    alt
+                                    class="swag-shirt-color-img shadow"
+                                  />
                                 </div>
                               </a>
                             </li>
                             <li class="list-inline-item">
                               <a href="#">
                                 <div class="shirt-color-img">
-                                  <img src="../assets/img/1.jpeg" alt class="swag-shirt-color-img" />
+                                  <img
+                                    src="../assets/img/1.jpeg"
+                                    alt
+                                    class="swag-shirt-color-img shadow"
+                                  />
                                 </div>
                               </a>
                             </li>
                             <li class="list-inline-item">
                               <a href="#">
                                 <div class="shirt-color-img">
-                                  <img src="../assets/img/1.jpeg" alt class="swag-shirt-color-img" />
+                                  <img
+                                    src="../assets/img/1.jpeg"
+                                    alt
+                                    class="swag-shirt-color-img shadow"
+                                  />
                                 </div>
                               </a>
                             </li>
                             <li class="list-inline-item">
                               <a href="#">
                                 <div class="shirt-color-img">
-                                  <img src="../assets/img/1.jpeg" alt class="swag-shirt-color-img" />
+                                  <img
+                                    src="../assets/img/1.jpeg"
+                                    alt
+                                    class="swag-shirt-color-img shadow"
+                                  />
                                 </div>
                               </a>
                             </li>
@@ -150,6 +191,7 @@
                 </div>
               </div>
 
+              <!-- Special Offers start -->
               <div class="section3 border-bottom-gray">
                 <div class="f20 opensans-semibold text-uppercase text-left mt10">Special Offers</div>
                 <ul class="list-unstyled text-left mb10">
@@ -159,7 +201,9 @@
                   >Offer applicable over current promotions and discounts T&amp;C.</li>
                 </ul>
               </div>
+              <!-- Special Offers end -->
 
+              <!-- Description start -->
               <div class="section4 border-bottom-gray">
                 <div class="f20 opensans-semibold text-uppercase text-left mt10">Description</div>
                 <ul class="list-unstyled mb10">
@@ -168,7 +212,9 @@
                   >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente temporibus sed quis fugiat fuga non modi. Corporis, non adipisci!</li>
                 </ul>
               </div>
+              <!-- Description end -->
 
+              <!-- Specification start -->
               <div class="section5 border-bottom-gray">
                 <div class="f20 opensans-semibold text-uppercase text-left mt10">Specification</div>
                 <div class="mb10">
@@ -230,6 +276,7 @@
                   </div>
                 </div>
               </div>
+              <!-- Specification end -->
 
               <div class="section6">
                 <div class="mt10 mb10 text-left">
@@ -249,23 +296,28 @@
                   </div>
                   </div>-->
 
-                  <ul class="list-inline mb20">
+                  <ul class="list-inline mb20 f14">
                     <li class="list-inline-item">
-                      <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-                        <label class="form-check-label text-muted f14">Add to compare</label>
-                      </div>
+                      <form action>
+                        <input type="checkbox" id="fruit" name="fruit" value="Apple" />
+                        <label for="fruit">Add to compare</label>
+                      </form>
+                      <!-- https://stackoverflow.com/questions/4148499/how-to-style-a-checkbox-using-css -->
+                      <!-- https://www.youtube.com/watch?v=cXVbsTT5gU8 -->
                     </li>
-                    <li class="list-inline-item">
-                      <a href="#" class="offers text-muted f14">Offers?</a>
+                    <li class="list-inline-item mx-5">
+                      <a href="#" class="offers text-muted">Offers?</a>
                     </li>
-                    <li class="list-inline-item text-muted f14">Buy 1 Get 1 Free</li>
+                    <li class="list-inline-item text-muted">Buy 1 Get 1 Free</li>
                   </ul>
 
+                  <!-- Add to cart button -->
                   <button
                     type="submit"
                     class="btn text-uppercase text-white f22 cart-btn mr-4 mb15"
                   >Add to cart</button>
+
+                  <!-- Add to Wishlist button -->
                   <button
                     type="submit"
                     class="btn text-uppercase text-white f22 wishlist-btn mb15"
@@ -284,16 +336,41 @@
 // @ is an alias to /src
 // import HelloWorld from '@/components/HelloWorld.vue'
 
+// import { Hooper, Slide } from "hooper";
+
 export default {
+  // data() {
+  //   return {
+  //     swiperOptionh: {
+  //       pagination: ".swiper-pagination-h",
+  //       paginationClickable: true,
+  //       spaceBetween: 50
+  //     },
+  //     swiperOption: {
+  //       centeredSlides: true,
+  //       autoplay: 5000,
+  //       loop: true,
+  //       pagination: ".swiper-pagination",
+  //       slidesPerView: 1,
+  //       paginationClickable: true,
+  //       spaceBetween: 30,
+  //       keyboardControl: true,
+  //       nextButton: ".swiper-button-next",
+  //       prevButton: ".swiper-button-prev"
+  //     }
+  //   };
+  // },
   name: "home",
   components: {
     // HelloWorld
+    // Hooper,
+    // Slide
   }
 };
 </script>
 
 <style lang="scss" scoped>
-@import "~@/scss/main";
+@import "~@/scss/import";
 
 .breadcrumb {
   padding-left: 0px;
@@ -318,9 +395,14 @@ export default {
     }
   }
 
-  .swag-shirt-var1-img {
+  .slider {
     width: 100%;
     height: auto;
+
+    .swag-shirt-var1-img {
+      width: 100%;
+      height: auto;
+    }
   }
 }
 
@@ -367,6 +449,54 @@ export default {
     background: $gray-dark-color;
     padding: 2px 30px;
     border-radius: 0px;
+  }
+
+  input[type="checkbox"] + label {
+    display: block;
+    margin: 0.2em;
+    cursor: pointer;
+    // padding: 2em;
+  }
+
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  input[type="checkbox"] + label:before {
+    content: "\2714";
+    border: 0.1em solid gray;
+    border-radius: 0;
+    display: inline-block;
+    width: 1.3em;
+    height: 1.3em;
+    padding-left: 0.2em;
+    padding-bottom: 0.3em;
+    // padding: 0.3em 0.2em;
+    margin-right: 0.2em;
+    // vertical-align: bottom;
+    color: transparent;
+    // transition: .2s;
+  }
+
+  input[type="checkbox"] + label:active:before {
+    transform: scale(0);
+  }
+
+  input[type="checkbox"]:checked + label:before {
+    background-color: gray;
+    border-color: gray;
+    color: #fff;
+  }
+
+  input[type="checkbox"]:disabled + label:before {
+    transform: scale(1);
+    border-color: #aaa;
+  }
+
+  input[type="checkbox"]:checked:disabled + label:before {
+    transform: scale(1);
+    background-color: #bfb;
+    border-color: #bfb;
   }
 }
 </style>
