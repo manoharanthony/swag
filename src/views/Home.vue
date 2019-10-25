@@ -77,7 +77,7 @@
                 <div class="swiper-slide"><img src="../assets/img/1.jpeg" alt class="swag-shirt-var1-img" /></div>
                 <div class="swiper-slide"><img src="../assets/img/1.jpeg" alt class="swag-shirt-var1-img" /></div>
                 <div class="swiper-slide"><img src="../assets/img/1.jpeg" alt class="swag-shirt-var1-img" /></div>
-              </div>
+              </div>3
             </div>-->
             <!-- Slider container end -->
           </div>
@@ -222,46 +222,46 @@
                     <div class="col-md-6">
                       <div class="specification">
                         <div class="row">
-                          <div class="col-md-5 col-sm-5 col-xs-5 text-left">
+                          <div class="col text-left">
                             <div class="specification">Brand</div>
                           </div>
-                          <div class="col-md-7 col-sm-7 col-xs-7 text-left">
+                          <div class="col text-left">
                             <div class="specification-text text-muted">MaroSwag</div>
                           </div>
                         </div>
 
                         <div class="row">
-                          <div class="col-md-5 col-sm-5 col-xs-5 text-left">
+                          <div class="col text-left">
                             <div class="specification">Collection</div>
                           </div>
-                          <div class="col-md-7 col-sm-7 col-xs-7 text-left">
+                          <div class="col text-left">
                             <div class="specification-text text-muted">Amten Prints</div>
                           </div>
                         </div>
 
                         <div class="row">
-                          <div class="col-md-5 col-sm-5 col-xs-5 text-left">
+                          <div class="col text-left">
                             <div class="specification">Sleeve</div>
                           </div>
-                          <div class="col-md-7 col-sm-7 col-xs-7 text-left">
+                          <div class="col text-left">
                             <div class="specification-text text-muted">Half Sleeve</div>
                           </div>
                         </div>
 
                         <div class="row">
-                          <div class="col-md-5 col-sm-5 col-xs-5 text-left">
+                          <div class="col text-left">
                             <div class="specification">Fabric</div>
                           </div>
-                          <div class="col-md-7 col-sm-7 col-xs-7 text-left">
+                          <div class="col text-left">
                             <div class="specification-text text-muted">56% Cotton, 44% Tensel</div>
                           </div>
                         </div>
 
                         <div class="row mb10">
-                          <div class="col-md-5 col-sm-5 col-xs-5 text-left">
+                          <div class="col text-left">
                             <div class="specification">Base color</div>
                           </div>
-                          <div class="col-md-7 col-sm-7 col-xs-7 text-left">
+                          <div class="col text-left">
                             <div class="specification text-muted">White</div>
                           </div>
                         </div>
@@ -328,6 +328,17 @@
           </div>
         </div>
       </div>
+
+      <hooper :itemsToShow="3">
+        <slide>slide 1</slide>
+        <slide>slide 2</slide>
+        <slide>slide 3</slide>
+        <slide>slide 4</slide>
+        <slide>slide 5</slide>
+        <slide>slide 6</slide>
+      </hooper>
+
+      <product></product>
     </div>
   </div>
 </template>
@@ -335,36 +346,38 @@
 <script>
 // @ is an alias to /src
 // import HelloWorld from '@/components/HelloWorld.vue'
+import product from '@/components/product.vue';
 
-// import { Hooper, Slide } from "hooper";
+import { Hooper, Slide } from "hooper";
 
 export default {
-  // data() {
-  //   return {
-  //     swiperOptionh: {
-  //       pagination: ".swiper-pagination-h",
-  //       paginationClickable: true,
-  //       spaceBetween: 50
-  //     },
-  //     swiperOption: {
-  //       centeredSlides: true,
-  //       autoplay: 5000,
-  //       loop: true,
-  //       pagination: ".swiper-pagination",
-  //       slidesPerView: 1,
-  //       paginationClickable: true,
-  //       spaceBetween: 30,
-  //       keyboardControl: true,
-  //       nextButton: ".swiper-button-next",
-  //       prevButton: ".swiper-button-prev"
-  //     }
-  //   };
-  // },
+  data() {
+    return {
+      swiperOptionh: {
+        pagination: ".swiper-pagination-h",
+        paginationClickable: true,
+        spaceBetween: 50
+      },
+      swiperOption: {
+        centeredSlides: true,
+        autoplay: 5000,
+        loop: true,
+        pagination: ".swiper-pagination",
+        slidesPerView: 3,
+        paginationClickable: true,
+        spaceBetween: 30,
+        keyboardControl: true,
+        nextButton: ".swiper-button-next",
+        prevButton: ".swiper-button-prev"
+      }
+    };
+  },
   name: "home",
   components: {
     // HelloWorld
-    // Hooper,
-    // Slide
+    Hooper,
+    Slide,
+    product
   }
 };
 </script>
